@@ -200,6 +200,26 @@ EC2_INSTANCE_TYPES = [
     "d2.8xlarge",
 ]
 
+EC2_INSTANCE_TYPES_TO_CORES = {
+
+    "t2.micro": 1,
+    "t2.small": 1,
+    "t2.medium": 2,
+    "t2.large": 2,
+
+    "m4.large": 2,
+    "m4.xlarge": 4,
+    "m4.2xlarge": 8,
+    "m4.4xlarge": 16,
+    "m4.10xlarge": 40,
+
+    "c4.large": 2,
+    "c4.xlarge": 4,
+    "c4.2xlarge": 8,
+    "c4.4xlarge": 16,
+    "c4.8xlarge": 36,
+}
+
 EC2_OS_TYPES = [
     "linux",       # api platform name = "linux"
     "mswin",       # api platform name = "windows"
